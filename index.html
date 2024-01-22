@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- cnd links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        btncolor: '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="font-manrope">
+    <header>
+        <nav class="pb-11">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-3xl font-extrabold">Hockey<span class="text-btncolor">’</span>sI</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass pr-5 hidden lg:block"></i>
+                    <a class="btn bg-btncolor text-white px-6 py-4">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <section class="relative flex flex-col lg:flex-row   ">
+            <!-- banner section -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/banner2.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/banner3.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="lg:max-w-xl md:max-w-full bg-black p-8 rounded-2xl relative lg:absolute lg:right-8 lg:bottom-8 mt-8">
+                <h1 class="text-xl font-extrabold text-white">Meet all the heroes from the field</h1>
+                <p class="text-white font-extralight">Hockey Hero is not merely a player; they are a maestro
+                    orchestrating the symphony of the puck across the rink. </p>
+            </div>
+        </section>
+    </header>
+    <section class="mt-24">
+        <div class="py-8 border-dashed border-y-2 space-y-6">
+            <h1 class="text-3xl font-extrabold text-center">Professional Hockeys Club</h1>
+            <p class="text-base font-normal text-center text-gray-500">The Arctic Gliders Hockey Club stands as a beacon
+                of prowess on the frozen battlegrounds of the hockey world. </p>
+        </div>
+        <!-- progess bar -->
+        <div class="flex flex-col lg:flex-row gap-10 pt-10 lg:px-20 ">
+            <div class="text-center space-y-5 px-10 ">
+                <div class="radial-progress text-red-500" style="--value:70;" role="progressbar">
+                <h1 class="text-black font-extrabold text-xl">70%</h1>
+                </div>
+                <h1 class="text-xl font-semibold ">Prayer Facility</h1>
+                <p class="text-base font-light">The sprawling complex houses meticulously designed training grounds equipped </p>
+            </div>
+            <div class="text-center space-y-5 px-10">
+                <div class="radial-progress text-green-500" style="--value:90;" role="progressbar">
+                <h1 class="text-black font-extrabold text-xl">95%</h1>
+                </div>
+                <h1 class="text-xl font-semibold ">Experienced Coach</h1>
+                <p class="text-base font-light">Boasts an illustrious playing career that saw him don the jersey of championship-winning teams</p>
+            </div>
+            <div class="text-center space-y-5 px-10">
+                <div class="radial-progress text-yellow-400" style="--value:85;" role="progressbar">
+                <h1 class="text-black font-extrabold text-xl">90%</h1>
+                </div>
+                <h1 class="text-xl font-semibold ">Senior Player</h1>
+                <p class="text-base font-light">Known for his meticulous approach to the game, Senior Player is a strategic genius who dissects opponents with surgical precision.</p>
+            </div>
+            <div class="text-center space-y-5 px-10">
+                <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">
+                <h1 class="text-black font-extrabold text-xl">80%</h1>
+                </div>
+                <h1 class="text-xl font-semibold ">Training Ground</h1>
+                <p class="text-base font-light">The heart of the Glacial Training Grounds lies in its multiple synthetic ice arenas, meticulously crafted to mimic the real thing. </p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="mt-24"> <!-- Program Sections -->
+        <div class="py-8 border-dashed border-y-2 space-y-6">
+            <h1 class="text-3xl font-extrabold text-center">Program Sections</h1>
+            <p class="text-base font-normal text-center text-gray-500">The Glacial Training Grounds are organized into distinct program sections,<br> each designed to address specific aspects of player development  </p>
+        </div>
+    </section>
+</body>
+
+</html>
+<!-- <div class="py-8 border-dashed border-y-2 space-y-6">
+            <h1 class="text-3xl font-extrabold text-center">Professional Hockeys Club</h1>
+            <p class="text-base font-normal text-center text-gray-500">The Arctic Gliders Hockey Club stands as a beacon
+                of prowess on the frozen battlegrounds of the hockey world. </p>
+        </div> -->
